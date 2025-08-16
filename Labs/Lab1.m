@@ -11,8 +11,8 @@ A = rand(5);
 
 % Ensure the matrix is invertible
 while abs(det(A)) < 1e-6
-    rng shuffle  % Change random seed
-    A = rand(5); % Generate new matrix
+    rng shuffle
+    A = rand(5);
 end
 
 disp('Matrix A:')
@@ -40,10 +40,10 @@ disp('Corresponding eigenvector:')
 disp(V(:,5))
 
 % Calculate V⁻¹ * A * V
-M = V^(-1)* A * V;
+M = V^(-1)* A * V
 
 % Compare element (1,1) of V⁻¹ * A * V with first eigenvalue of A
-M(1,1) - D(1,1);
+M(1,1) - D(1,1)
 
 % Calculate sum of all elements of matrix M
 sum(sum(M));
