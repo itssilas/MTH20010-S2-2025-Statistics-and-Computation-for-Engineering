@@ -1,0 +1,25 @@
+# MATLAB .gitignore
+
+# Automatically generated files
+*.asv
+*.autosave
+*.m~ 
+*.mdl.*
+*.slxc
+*.slx.autosave
+*.mex*
+*.fig
+
+# Simulink cache and code generation folders
+slprj/
+sccprj/
+codegen/
+*.log
+*.bak
+
+# MATLAB preferences and crash dumps
+matlabprefs.mat
+*.crash
+
+# Hidden files
+.DS_Store
