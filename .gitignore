@@ -1,25 +1,22 @@
-# MATLAB .gitignore
-
-# Automatically generated files
+# MATLAB backup and temporary files
 *.asv
 *.autosave
 *.m~ 
-*.mdl.*
-*.slxc
-*.slx.autosave
-*.mex*
-*.fig
-
-# Simulink cache and code generation folders
-slprj/
-sccprj/
-codegen/
-*.log
+*.fig~ 
+*.mat~ 
 *.bak
-
-# MATLAB preferences and crash dumps
-matlabprefs.mat
-*.crash
-
-# Hidden files
 .DS_Store
+
+# MATLAB internal folders
+resources/
+resources/project/
+project/
+*.prj.user
+
+# IDE folders
+.idea/
+.vscode/
+
+# System-specific files
+Thumbs.db
+desktop.ini
